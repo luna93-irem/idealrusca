@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rusça Öğren — Alfabeden Akıcılığa</title>
+<meta name="description" content="Türkçe konuşanlar için kapsamlı Rusça öğrenme platformu: EPUB/PDF okuyucu, kural tabanlı analiz, kişisel kütüphane, flash kartlar.">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">
+      <span class="logo-mark">Р</span>
+      <div class="logo-text">
+        <strong>Rusça Öğren</strong>
+        <small>Kurallı morfoloji · EPUB/PDF okuyucu · Flash kartlar</small>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <button data-page="home" class="active">Ana Sayfa</button>
+      <button data-page="alphabet">Alfabe</button>
+      <button data-page="grammar">Gramer</button>
+      <button data-page="reader">Okuyucu</button>
+      <button data-page="library">Kütüphanem</button>
+      <button data-page="practice">Pratik</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page active" id="page-home"></section>
+  <section class="page" id="page-alphabet"></section>
+  <section class="page" id="page-grammar"></section>
+  <section class="page" id="page-reader"></section>
+  <section class="page" id="page-library"></section>
+  <section class="page" id="page-practice"></section>
+</main>
+
+<footer class="footer">
+  <p>Rusça Öğren · Tarayıcıda çalışan kişisel öğrenme aracı</p>
+  <p class="muted">İlerleme ve kütüphaneniz bu cihazda saklanır · Ses tarayıcıdan üretilir</p>
+</footer>
+
+<!-- Global tooltip -->
+<div id="popover" class="popover"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
